@@ -1,0 +1,35 @@
+Here's a quick Cisco cheat sheet covering essential concepts and commands:
+
+Basic Cisco Commands
+Access Privileged Mode: enable
+Enter Global Configuration Mode: configure terminal
+Save Configuration: write memory or copy running-config startup-config
+Show Running Configuration: show running-config
+Check IP Interfaces: show ip interface brief
+Interface Commands
+Enter Interface Mode: interface [type] [number] (e.g., interface GigabitEthernet0/1)
+Assign IP Address: ip address [IP address] [subnet mask]
+Enable Interface: no shutdown
+Routing
+Static Route: ip route [destination network] [subnet mask] [next-hop IP]
+View Routing Table: show ip route
+VLAN Commands
+Create VLAN: vlan [VLAN ID]
+Assign VLAN to Port: switchport access vlan [VLAN ID] (in interface mode)
+Set Port as Trunk: switchport mode trunk
+Access Control Lists (ACLs)
+Create Standard ACL: access-list [number] permit/deny [source IP]
+Create Extended ACL: access-list [number] permit/deny [protocol] [source IP] [destination IP]
+Apply ACL to Interface: ip access-group [ACL number] in/out
+NAT Commands
+Configure Inside NAT: ip nat inside
+Configure Outside NAT: ip nat outside
+Create Static NAT: ip nat inside source static [inside local IP] [inside global IP]
+Useful Show Commands
+Show Version: show version
+Show Interfaces: show interfaces
+Show ARP Table: show arp
+Show CDP Neighbors: show cdp neighbors
+Debug Commands
+Debug IP Packets: debug ip packet
+Turn Off Debugging: undebug all or no debug all
